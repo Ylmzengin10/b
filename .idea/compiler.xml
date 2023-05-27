@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com.team113Cucumber_summer2023-main" />
+        <module name="com.team113Cucumber" />
         <module name="com.Team113_Cucumber" />
       </profile>
     </annotationProcessing>

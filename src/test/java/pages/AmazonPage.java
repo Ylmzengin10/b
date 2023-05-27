@@ -16,8 +16,8 @@ public class AmazonPage {
     // Webdriver driver objesini page class'larina tanimlamak icin
     // PageFactory class'indan initElements() kullanilir
 
-    public AmazonPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public AmazonPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
         // bu ayari constructor icine koyma sebebimiz :
         // page sayfalarina obje olusturularak ulasildigi icin
         // kim page sayfasini kullanmak isterse
@@ -26,10 +26,16 @@ public class AmazonPage {
     }
 
 
-    @FindBy(id ="twotabsearchtextbox")
+    @FindBy(id = "twotabsearchtextbox")
     public WebElement aramaKutusu;
 
     @FindBy(xpath = "(//div[@class='sg-col-inner'])[1]")
     public WebElement aramaSonucuElementi;
+
+    @FindBy(xpath = "//*[@data-image-index='1']")
+    public WebElement ilkUrunElementi;
+
+    @FindBy(xpath = "//span[@id='productTitle']")
+    public WebElement ilkUrunIsimElementi;
 
 }
