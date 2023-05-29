@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.182" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="US1002 Amazon Title Testi" name="TC04 Kullanici amazon sayfasinin title'nin dogru oldugunu kontrol eder" time="4.859">
+<testsuite name="Cucumber" time="23.886" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1009 Kullanici Automation Exercise sayfasinda yeni kullanici olusturur" name="TC15 Kullanici kendi bilgileriyle yeni kullanici olusturabilmeli" time="23.68">
 <system-out><![CDATA[
-Given Kullanici amazon anasayfaya gider.....................................passed
-Then Title'in Amazon icerdigini test eder...................................passed
-And Sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1003 BackGround kullanarak tekrarlardan kurtulur" name="TC06 Amazon Java Testi" time="7.055">
-<system-out><![CDATA[
-Given Kullanici amazon anasayfaya gider.....................................passed
-When Java icin arama yapar..................................................passed
-Then Arama sonuclarinin Java icerdigini test eder...........................passed
-And Sayfayi kapatir.........................................................passed
+Given Kullanici "aeUrl" anasayfaya gider....................................passed
+And user sign up linkine tiklar.............................................passed
+And 2 saniye bekler.........................................................passed
+And user Create an account bolumune name ve email adresi girer..............passed
+And signUp butonuna basar...................................................passed
+And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
+And user Create Account butonuna basar......................................passed
+Then hesap olustugunu test edin.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
